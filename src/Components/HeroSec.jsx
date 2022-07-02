@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import HeroImage from '../assets/hero-image.svg';
 
 export default function HeroSec() {
@@ -20,9 +21,9 @@ export default function HeroSec() {
                             around the world are launching new careers, advancing in their fields,
                             and enriching their lives.
                         </p>
-                        <a href="www.google.com" className="btn btn-primary rounded fw-bold fs-5">
+                        <Link to="/courses" className="btn btn-primary rounded fw-bold fs-5">
                             Courses <FaArrowRight className="ms-2" />
-                        </a>
+                        </Link>
                     </Col>
                     <Col lg={6} className="d-flex justify-content-center">
                         <img className="w-100 hero-img" src={HeroImage} alt="Hero section" />

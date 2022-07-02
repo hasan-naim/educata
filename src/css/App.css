@@ -24,6 +24,24 @@ body {
   background-color: #f5f6fe;
 }
 
+.card {
+  border: none;
+}
+.card-shadow {
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.card-shadow:hover {
+  transition: all 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-shadow p,
+.card-shadow h5 {
+  cursor: pointer;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 992px) {

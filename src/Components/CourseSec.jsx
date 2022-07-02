@@ -1,31 +1,48 @@
 import React from 'react';
-import { Card, Container } from 'react-bootstrap';
+import CsslImg from '../assets/courses/css.jpg';
+import HtmlImg from '../assets/courses/html.jpg';
+import Card from './Card';
 
 function CourseSec() {
     return (
         <div className="courses-section pt-5 pb-5">
-            <Container>
-                <h1 className="text-center hero-title">Courses</h1>
+            <div className="container">
+                <h1 className="text-center hero-title mb-5">Courses</h1>
                 <div className="row">
-                    <div className="col">
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up
-                                    the bulk of the card&apos;s content.
-                                </Card.Text>
-                                <a className="btn btn-primary rounded" href="ww">
-                                    Go somewhere
-                                </a>
-                            </Card.Body>
-                        </Card>
+                    <div className="col-12 col-sm-6 col-md-4 col-xl-3 d-flex pb-3 justify-content-center">
+                        <Card
+                            cardTitle="HTML Crash Course"
+                            image={HtmlImg}
+                            desc="In this crash course I will cram as much about HTML that I can. This is meant for absolute beginners."
+                            path="/courses/html-crash"
+                        />
                     </div>
-                    <div className="col">Column</div>
-                    <div className="col">Column</div>
+                    <div className="col-12 col-sm-6 col-md-4 col-xl-3 d-flex pb-3  justify-content-center">
+                        <Card
+                            cardTitle="Css Crash Course"
+                            image={CsslImg}
+                            desc="In this crash course I will cram as much about HTML that I can. This is meant for absolute beginners."
+                            path="/courses/css-crash"
+                        />
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-xl-3 d-flex pb-3 justify-content-center">
+                        <Card
+                            cardTitle="HTML Crash Course"
+                            image={HtmlImg}
+                            desc="In this crash course I will cram as much about HTML that I can. This is meant for absolute beginners."
+                            path="/courses/html-crash"
+                        />
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-xl-3 d-flex pb-3 justify-content-center">
+                        <Card
+                            cardTitle="HTML Crash Course"
+                            image={HtmlImg}
+                            desc="In this crash course I will cram as much about HTML that I can. This is meant for absolute beginners."
+                            path="/courses/html-crash"
+                        />
+                    </div>
                 </div>
-            </Container>
+            </div>
         </div>
     );
 }

@@ -1,16 +1,24 @@
-import React from "react"
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Card () {
+function Card({ cardTitle, image, desc, path }) {
     return (
         <>
-        <div class="card" style={{width: 12}}>
-  <img src={} class="card-img-top" alt="Course">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+            <Link
+                to={path}
+                className="d-block text-secondary text-decoration-none card-shadow"
+                style={{ width: '18rem' }}
+            >
+                <div className="card rounded overflow-hidden">
+                    <img src={image} className="card-img-top" alt={cardTitle} />
+                    <div className="card-body">
+                        <h5 className="card-title text-center fw-bold">{cardTitle}</h5>
+                        <p className="card-text">{desc}</p>
+                    </div>
+                </div>
+            </Link>
         </>
-    )
+    );
 }
+
+export default Card;
