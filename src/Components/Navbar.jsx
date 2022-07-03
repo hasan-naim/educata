@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/educata.svg';
 
 function NavBar() {
@@ -14,13 +14,13 @@ function NavBar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link as={Link} to="/">
+                            <Nav.Link as={NavLink} to="/">
                                 Home
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/courses">
+                            <Nav.Link as={NavLink} to="/courses">
                                 Courses
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/about">
+                            <Nav.Link as={NavLink} to="/about">
                                 About
                             </Nav.Link>
                             <NavDropdown title="Categories" id="basic-nav-dropdown">
