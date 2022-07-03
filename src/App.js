@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import CssCrash from './Components/pages/courses/CssCrash';
 import HtmlCrash from './Components/pages/courses/HtmlCrash';
+import JsCrash from './Components/pages/courses/JsCrash';
+import ReactJs from './Components/pages/courses/ReactJs';
 import CoursesPage from './Components/pages/CoursesPage';
 import ErrorPage from './Components/pages/ErrorPage';
 import HomePage from './Components/pages/HomePage';
@@ -17,7 +19,9 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/courses/html-crash" element={<HtmlCrash />} />
+                <Route path="/courses/react-js" element={<ReactJs />} />
                 <Route path="/courses/css-crash" element={<CssCrash />} />
+                <Route path="/courses/js-crash" element={<JsCrash />} />
                 <Route path="/courses" element={<CoursesPage />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
