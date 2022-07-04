@@ -8,7 +8,7 @@ function NavBar() {
         <>
             <Navbar className="bg-primary shadow fixed-top" variant="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home">
+                    <Navbar.Brand as={Link} to="/">
                         <img src={logo} alt="educata logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

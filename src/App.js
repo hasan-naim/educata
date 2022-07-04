@@ -1,10 +1,18 @@
 // import CourseSec from './Components/CourseSec';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import AdobeIlas from './Components/pages/courses/AdobeIlas';
+import AppDev from './Components/pages/courses/AppDev';
+import Cplusplus from './Components/pages/courses/Cplusplus';
 import CssCrash from './Components/pages/courses/CssCrash';
+import Dsa1 from './Components/pages/courses/Dsa1';
+import FigmaCrash from './Components/pages/courses/FigmaCrash';
 import HtmlCrash from './Components/pages/courses/HtmlCrash';
 import JsCrash from './Components/pages/courses/JsCrash';
 import ReactJs from './Components/pages/courses/ReactJs';
+import Sketch from './Components/pages/courses/Sketch';
+import VideoEdt1 from './Components/pages/courses/VideoEdt1';
+import VideoEdt2 from './Components/pages/courses/VideoEdt2';
 import CoursesPage from './Components/pages/CoursesPage';
 import ErrorPage from './Components/pages/ErrorPage';
 import HomePage from './Components/pages/HomePage';
@@ -20,6 +28,14 @@ function App() {
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/courses/html-crash" element={<HtmlCrash />} />
                 <Route path="/courses/react-js" element={<ReactJs />} />
+                <Route path="/courses/c++" element={<Cplusplus />} />
+                <Route path="/courses/sketch" element={<Sketch />} />
+                <Route path="/courses/android-development" element={<AppDev />} />
+                <Route path="/courses/algorithms-and-data-structures" element={<Dsa1 />} />
+                <Route path="/courses/adobe-illustrator" element={<AdobeIlas />} />
+                <Route path="/courses/premiere-pro" element={<VideoEdt1 />} />
+                <Route path="/courses/free-adobe-premiere-pro" element={<VideoEdt2 />} />
+                <Route path="/courses/figma-crash" element={<FigmaCrash />} />
                 <Route path="/courses/css-crash" element={<CssCrash />} />
                 <Route path="/courses/js-crash" element={<JsCrash />} />
                 <Route path="/courses" element={<CoursesPage />} />
