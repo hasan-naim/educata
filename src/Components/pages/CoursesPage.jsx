@@ -21,7 +21,7 @@ function CoursesPage() {
             <div className="mt-5 pt-5">
                 <div className="container">
                     <h1 className="text-center hero-title mb-5">Courses</h1>
-                    <CatagorieSlider />
+                    <CatagorieSlider count="all" />
                     <div className="row">
                         <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
                             <Card
@@ -29,6 +29,14 @@ function CoursesPage() {
                                 image={HtmlImg}
                                 desc="In this crash course I will cram as much about HTML that I can. This is meant for absolute beginners."
                                 path="/courses/html-crash"
+                            />
+                        </div>
+                        <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
+                            <Card
+                                cardTitle="Android Development"
+                                image={AppdevImg}
+                                desc="In this course, you will learn how to build a real-word Android application from scratch using Java. "
+                                path="/courses/android-development"
                             />
                         </div>
                         <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3  justify-content-center">
@@ -45,6 +53,14 @@ function CoursesPage() {
                                 image={JsImg}
                                 desc="JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web."
                                 path="/courses/js-crash"
+                            />
+                        </div>
+                        <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
+                            <Card
+                                cardTitle="Intro to Sketch"
+                                image={SketchImg}
+                                desc="Sketch is a vector screen design application that’s primarily used for designing digital products — like apps and web interfaces."
+                                path="/courses/sketch"
                             />
                         </div>
                         <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
@@ -80,14 +96,6 @@ function CoursesPage() {
                                 path="/courses/figma-crash"
                             />
                         </div>
-                        <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
-                            <Card
-                                cardTitle="Intro to Sketch"
-                                image={SketchImg}
-                                desc="Sketch is a vector screen design application that’s primarily used for designing digital products — like apps and web interfaces."
-                                path="/courses/sketch"
-                            />
-                        </div>
 
                         <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
                             <Card
@@ -119,14 +127,6 @@ function CoursesPage() {
                                 image={VideoEdt2}
                                 desc="I am here to help you learn Adobe Premiere Pro and to show you the tools you need to become a successful video editor."
                                 path="/courses/free-adobe-premiere-pro"
-                            />
-                        </div>
-                        <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
-                            <Card
-                                cardTitle="Android Development"
-                                image={AppdevImg}
-                                desc="In this course, you will learn how to build a real-word Android application from scratch using Java. "
-                                path="/courses/android-development"
                             />
                         </div>
                     </div>

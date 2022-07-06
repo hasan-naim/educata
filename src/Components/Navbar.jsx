@@ -24,12 +24,23 @@ function NavBar() {
                                 About
                             </Nav.Link>
                             <NavDropdown title="Categories" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Javascript</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Node Js</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">
-                                    Separated link
+                                <NavDropdown.Item as={NavLink} to="/courses/web-development">
+                                    Web Development
+                                </NavDropdown.Item>
+                                <NavDropdown.Item as={NavLink} to="/courses/app-development">
+                                    App Development
+                                </NavDropdown.Item>
+                                <NavDropdown.Item as={NavLink} to="/courses/video-editing">
+                                    Video Editing
+                                </NavDropdown.Item>
+                                <NavDropdown.Item as={NavLink} to="/courses/c++">
+                                    C++
+                                </NavDropdown.Item>
+                                <NavDropdown.Item as={NavLink} to="/courses/dsa">
+                                    DSA
+                                </NavDropdown.Item>
+                                <NavDropdown.Item as={NavLink} to="/courses/graphic-design">
+                                    Graphic Design
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>

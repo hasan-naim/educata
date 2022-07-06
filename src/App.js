@@ -1,6 +1,7 @@
 // import CourseSec from './Components/CourseSec';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import AppDevCata from './Components/pages/AppDevCata';
 import AdobeIlas from './Components/pages/courses/AdobeIlas';
 import AppDev from './Components/pages/courses/AppDev';
 import Cplusplus from './Components/pages/courses/Cplusplus';
@@ -14,8 +15,13 @@ import Sketch from './Components/pages/courses/Sketch';
 import VideoEdt1 from './Components/pages/courses/VideoEdt1';
 import VideoEdt2 from './Components/pages/courses/VideoEdt2';
 import CoursesPage from './Components/pages/CoursesPage';
+import CplusplusCata from './Components/pages/CplusplusCata';
+import Dsa from './Components/pages/Dsa';
 import ErrorPage from './Components/pages/ErrorPage';
+import GraphicDes from './Components/pages/GraphicDes';
 import HomePage from './Components/pages/HomePage';
+import VideoEdtCata from './Components/pages/VideoEdtCata';
+import WebDev from './Components/pages/WebDev';
 import './css/App.css';
 import './css/bootstrap.min.css';
 
@@ -26,6 +32,13 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/home" element={<HomePage />} />
+                <Route path="/courses/web-development" element={<WebDev />} />
+                <Route path="/courses/graphic-design" element={<GraphicDes />} />
+                <Route path="/courses/video-editing" element={<VideoEdtCata />} />
+                <Route path="/courses/dsa" element={<Dsa />} />
+                <Route path="/courses/app-development" element={<AppDevCata />} />
+                <Route path="/courses/c++" element={<CplusplusCata />} />
+
                 <Route path="/courses/html-crash" element={<HtmlCrash />} />
                 <Route path="/courses/react-js" element={<ReactJs />} />
                 <Route path="/courses/c++" element={<Cplusplus />} />
