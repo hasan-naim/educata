@@ -10,7 +10,7 @@ function CoursesPage() {
             <div className="mt-5 pt-5">
                 <div className="container">
                     <h1 className="text-center hero-title mb-5">Courses</h1>
-                    <CatagorieSlider count="all" />
+                    <CatagorieSlider count="video" />
                     <div className="row">
                         <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
                             <Card
