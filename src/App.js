@@ -1,5 +1,6 @@
 // import CourseSec from './Components/CourseSec';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import AppDevCata from './Components/pages/AppDevCata';
 import AdobeIlas from './Components/pages/courses/AdobeIlas';
@@ -54,6 +55,8 @@ function App() {
                 <Route path="/courses" element={<CoursesPage />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
+
+            <Footer />
         </BrowserRouter>
     );
 }

@@ -3,6 +3,20 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --text-slate-300: rgb(203 213 225);
+  --text-slate-100: rgb(241 245 249);
+  --text-slate-400: rgb(148 163 184);
+}
+.text-slate-100 {
+  color: rgb(241 245 249);
+}
+.text-slate-400 {
+  color: rgb(148 163 184);
+}
+.text-slate-300 {
+  color: rgb(203 213 225);
+}
 .bg-navBar {
   background-color: #0b1121;
 }
@@ -16,6 +30,10 @@ body {
 }
 .btn {
   padding: 0.4rem 1.25rem !important;
+}
+
+main {
+  min-height: 80vh;
 }
 
 /* courses section */
@@ -95,6 +113,39 @@ body {
 .catagorie-slider a.active {
   background-color: #00000033;
 }
+
+/* Footer section starts from here */
+
+footer {
+  background-color: #0b1121;
+  margin-bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+.text-link {
+  font-size: 18px;
+}
+.footer-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.text-link:hover {
+  color: var(--text-slate-300);
+}
+.text-link svg {
+  margin-right: 3px;
+}
+
+.footer-bottom {
+  background: #040812;
+}
+
+.error-page {
+  margin-bottom: 66vh;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 992px) {
