@@ -45,7 +45,7 @@ function CatagorieSec() {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
                             <Link
-                                to="/courses/web-development"
+                                to="/courses/graphic-design"
                                 className="card-catagories d-flex flex-column p-3 d-block"
                             >
                                 <div className="icon">
@@ -58,7 +58,7 @@ function CatagorieSec() {
                         </div>
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
                             <Link
-                                to="/courses/web-development"
+                                to="/courses/video-editing"
                                 className="card-catagories d-flex flex-column p-3 d-block"
                             >
                                 <div className="icon">

@@ -16,7 +16,7 @@ function CoursesPage() {
                                 cardTitle="C++ Programming Course"
                                 image={Cplusplsu}
                                 desc="Learn modern C++ 20 programming in this comprehensive course."
-                                path="/courses/c++"
+                                path="/courses/learn-c++"
                             />
                         </div>
                     </div>

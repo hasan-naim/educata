@@ -77,7 +77,7 @@ function CoursesPage() {
                                 cardTitle="C++ Programming Course"
                                 image={Cplusplsu}
                                 desc="Learn modern C++ 20 programming in this comprehensive course."
-                                path="/courses/c++"
+                                path="/courses/learn-c++"
                             />
                         </div>
                         <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3  justify-content-center">
@@ -110,7 +110,7 @@ function CoursesPage() {
                                 cardTitle="Dsa"
                                 image={Dsa2Img}
                                 desc="Data structures and algorithms are one of the topics taught to computer science and software engineering students."
-                                path="/courses/dsa-mosh"
+                                path="/courses/dsa-by-mosh"
                             />
                         </div>
                         <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">

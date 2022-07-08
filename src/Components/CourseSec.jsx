@@ -1,10 +1,14 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import AppdevImg from '../assets/courses/app-dev-1.jpg';
 import CsslImg from '../assets/courses/css.jpg';
+import FigmaImg from '../assets/courses/figma.jpg';
 import HtmlImg from '../assets/courses/html.jpg';
 import JsImg from '../assets/courses/js.jpg';
 import ReactImg from '../assets/courses/reactjs.jpg';
+import SketchImg from '../assets/courses/sketch.jpg';
+import VideoEdit1 from '../assets/courses/video-edt-1.jpg';
 import Card from './Card';
 
 function CourseSec() {
@@ -43,6 +47,39 @@ function CourseSec() {
                             image={ReactImg}
                             desc="React JS Tutorial - Get up running with React JS: the most popular JavaScript library in the world! "
                             path="/courses/react-js"
+                        />
+                    </div>
+
+                    <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
+                        <Card
+                            cardTitle="Figma Crash Course"
+                            image={FigmaImg}
+                            desc="This Figma Crash Course 2021 is beginner-friendly and will help you get up and running with the design platform."
+                            path="/courses/figma-crash"
+                        />
+                    </div>
+                    <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
+                        <Card
+                            cardTitle="Premiere Pro | TUTORIAL"
+                            image={VideoEdit1}
+                            desc="Welcome to Learn Everything about Adobe Premiere Pro. In this massive 9+ hour free master class course you will learn EVERYTHING about Adobe Premiere Pro"
+                            path="/courses/premiere-pro"
+                        />
+                    </div>
+                    <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
+                        <Card
+                            cardTitle="Android Development"
+                            image={AppdevImg}
+                            desc="In this course, you will learn how to build a real-word Android application from scratch using Java. "
+                            path="/courses/android-development"
+                        />
+                    </div>
+                    <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex pb-3 justify-content-center">
+                        <Card
+                            cardTitle="Intro to Sketch"
+                            image={SketchImg}
+                            desc="Sketch is a vector screen design application that’s primarily used for designing digital products — like apps and web interfaces."
+                            path="/courses/sketch"
                         />
                     </div>
                 </div>

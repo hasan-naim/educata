@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <>
-            <footer className=" text-lg-start">
+            <footer className=" text-lg-start mt-5">
                 {/* <!-- Grid container --> */}
                 <div className="container p-4">
                     {/* <!--Grid row--> */}
