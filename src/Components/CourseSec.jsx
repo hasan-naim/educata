@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import CsslImg from '../assets/courses/css.jpg';
 import HtmlImg from '../assets/courses/html.jpg';
@@ -47,9 +48,9 @@ function CourseSec() {
                 </div>
                 <Link
                     to="/courses"
-                    className="btn btn-primary rounded fw-bold fs-5 mx-auto d-block btn-view-more"
+                    className="btn btn-primary rounded fw-bold fs-5 mx-auto d-block btn-view-more mt-3"
                 >
-                    View More
+                    View More <FaArrowRight className="ms-2" />
                 </Link>
             </div>
         </div>
