@@ -4,10 +4,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 :root {
+  --primary: #4c7ce7;
   --text-slate-300: rgb(203 213 225);
   --text-slate-100: rgb(241 245 249);
   --text-slate-400: rgb(148 163 184);
 }
+
 .text-slate-100 {
   color: rgb(241 245 249);
 }
@@ -41,6 +43,9 @@ main {
 .courses-section {
   background-color: #f5f6fe;
 }
+.btn-view-more {
+  width: fit-content;
+}
 
 .card {
   border: none;
@@ -60,6 +65,34 @@ main {
 .card-shadow p,
 .card-shadow h5 {
   cursor: pointer;
+}
+
+/* catagorie-section */
+
+.catagorie-sec .row a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.catagorie-sec .card-catagories {
+  transition: all 0.3s;
+  max-width: 200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 6px;
+  border: 1px solid rgb(226, 226, 226);
+}
+.catagorie-sec a:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: var(--primary) !important;
+}
+.catagorie-sec .card-catagories .icon svg {
+  font-size: 2.5rem;
+}
+.catagorie-sec .card-catagories span {
 }
 
 /* catagorie-slider */

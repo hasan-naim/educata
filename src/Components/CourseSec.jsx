@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CsslImg from '../assets/courses/css.jpg';
 import HtmlImg from '../assets/courses/html.jpg';
 import JsImg from '../assets/courses/js.jpg';
@@ -44,6 +45,12 @@ function CourseSec() {
                         />
                     </div>
                 </div>
+                <Link
+                    to="/courses"
+                    className="btn btn-primary rounded fw-bold fs-5 mx-auto d-block btn-view-more"
+                >
+                    View More
+                </Link>
             </div>
         </div>
     );

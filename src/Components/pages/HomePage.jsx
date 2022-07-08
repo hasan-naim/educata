@@ -1,4 +1,5 @@
 import React from 'react';
+import CatagorieSec from '../CatagorieSec';
 import CourseSec from '../CourseSec';
 import HeroSec from '../HeroSec';
 
@@ -7,6 +8,7 @@ function HomePage() {
         <>
             <HeroSec />
             <CourseSec />
+            <CatagorieSec />
         </>
     );
 }
