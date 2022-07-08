@@ -2,6 +2,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import AboutPage from './Components/pages/AboutPage';
 import AppDevCata from './Components/pages/AppDevCata';
 import AdobeIlas from './Components/pages/courses/AdobeIlas';
 import AppDev from './Components/pages/courses/AppDev';
@@ -39,7 +40,7 @@ function App() {
                 <Route path="/courses/dsa" element={<Dsa />} />
                 <Route path="/courses/app-development" element={<AppDevCata />} />
                 <Route path="/courses/c++" element={<CplusplusCata />} />
-
+                <Route path="/about" element={<AboutPage />} />
                 <Route path="/courses/html-crash" element={<HtmlCrash />} />
                 <Route path="/courses/react-js" element={<ReactJs />} />
                 <Route path="/courses/c++" element={<Cplusplus />} />
